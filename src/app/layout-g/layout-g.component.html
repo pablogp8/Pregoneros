@@ -1,0 +1,13 @@
+<mat-grid-list cols="4" rowHeight="100px">
+
+  <mat-grid-tile
+      *ngFor="let tile of tiles"
+      [colspan]="tile.cols"
+      [rowspan]="tile.rows"
+      [style.background]="tile.color">
+    {{tile.text}}
+    <mat-grid-tile-header rowHeight="100px">titulo </mat-grid-tile-header>
+    <mat-grid-tile-footer rowHeight="100px">pie</mat-grid-tile-footer>
+  </mat-grid-tile>
+
+</mat-grid-list>
